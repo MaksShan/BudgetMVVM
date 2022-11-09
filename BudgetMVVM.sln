@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BudgetMVVM", "BudgetMVVM.csproj", "{DB163B77-E657-45FC-89EE-1E1AE0FD80CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB163B77-E657-45FC-89EE-1E1AE0FD80CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB163B77-E657-45FC-89EE-1E1AE0FD80CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB163B77-E657-45FC-89EE-1E1AE0FD80CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB163B77-E657-45FC-89EE-1E1AE0FD80CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7E96B3D-B27A-4BAD-9519-E9BD42A2176C}
+	EndGlobalSection
+EndGlobal
