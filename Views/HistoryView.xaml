@@ -38,7 +38,6 @@
                 </Style>
             </DataGrid.RowStyle>
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Date" Binding="{Binding Date, StringFormat=\{0:dd.MM.yy\}}"/>
                 <DataGridTextColumn Header="Operation type" Binding="{Binding Type}"/>
                 <DataGridTextColumn Header="Amount" Binding="{Binding Amount}"/>
