@@ -200,7 +200,7 @@ public class StatisticsInfo
                                                       op.Date.Month == DateTime.Now.Month && op.Date.Day == DateTime.Now.Day)
                 .GroupBy(op => op.Date.Hour).OrderBy(gr => gr.Key);
 
-            var initialOperationId = groupsByDate.Select(x => x.FirstOrDefault()).OrderBy(x => x?.Date).FirstOrDefault()?.Id; // вылетает эксепшен если ничего не найдено
+            var initialOperationId = groupsByDate.FirstOrDefault()?.OrderBy(x => x.Date).FirstOrDefault()?.Id;
 
             var dailyBalance = new List<TimeBalance>();
             TimeSpan date = default;
@@ -236,7 +236,7 @@ public class StatisticsInfo
             var groupsByDate = Operations.Where(op => op.Date.Month == DateTime.Now.Month && op.Date.Year == DateTime.Now.Year)
                 .GroupBy(op => op.Date.Day).OrderBy(gr => gr.Key);
 
-            var initialOperationId = groupsByDate.Select(x => x.FirstOrDefault()).OrderBy(x => x?.Date).FirstOrDefault()?.Id;
+            var initialOperationId = groupsByDate.FirstOrDefault()?.OrderBy(x => x.Date).FirstOrDefault()?.Id;
 
             var dailyBalance = new List<DateBalance>();
             DateTime date = default;
@@ -270,9 +270,9 @@ public class StatisticsInfo
         if (Operations != null)
         {
             var groupsByDate = Operations.Where(op => op.Date.Year == DateTime.Now.Year)
-                .GroupBy(op => op.Date.Day).OrderBy(gr => gr.Key);
+                .GroupBy(op => op.Date.Month).OrderBy(gr => gr.Key);
 
-            var initialOperationId = groupsByDate.Select(x => x.FirstOrDefault()).OrderBy(x => x?.Date).FirstOrDefault()?.Id;
+            var initialOperationId= groupsByDate.FirstOrDefault()?.OrderBy(x => x.Date).FirstOrDefault()?.Id;
 
             var dailyBalance = new List<DateBalance>();
             DateTime date = default;
