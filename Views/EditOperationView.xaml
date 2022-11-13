@@ -63,6 +63,7 @@
                  materialDesign:HintAssist.Hint="Amount"
                  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                  VerticalAlignment="Center" 
+                 PreviewTextInput="AmountTb_OnPreviewTextInput"
                  Text="{Binding Amount}"/>
         <DatePicker Grid.Column="1" Grid.Row="3"
                     Margin="0 5 0 0"

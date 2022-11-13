@@ -59,7 +59,9 @@ internal class AddOperationVM : BaseViewModel
 
     #region Commands
     public ICommand AddItemCommand { get; }
+
     private bool CanAddItemExecute(object p) => true;
+
     private void OnAddItemCommandExecuted(object p)
     {
         if (_selectedCategory == null)
